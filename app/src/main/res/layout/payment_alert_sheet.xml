@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_background"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/payment_dialog_bg"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Payment method"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/address_header"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/close_alert"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/cash_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Pay Cash on Task Complete" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Card Payment"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:id="@+id/card_payment"
+            android:enabled="false"
+        />
+    </LinearLayout>
+</ScrollView>
